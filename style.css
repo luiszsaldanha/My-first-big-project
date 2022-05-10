@@ -1,55 +1,110 @@
 @charset "UTF-8";
-body{
-    
-    background-image: linear-gradient(to right, #000000,#413530);
-    color: rgb(0, 0, 0);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    margin: 0px;
-    
-}
-header{
-    background-image:linear-gradient(to bottom,black, brown);
-    color: white;
-    margin: 0px;
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,400;0,800;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/*marrom, preto, branco, dourado, vermelho*/
+
+:root{
+    --cor0: black;
+    --cor1: #5C4033;
+    --cor2: brown;
+    --cor3: #3f291e;
+    --cor4: #f5deb3;
+
+}
+body{
+    background-color: rgba(128, 128, 128, 0.589);
+    color: rgb(0, 0, 0);
+    font-family:'Noto Sans Display', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: normal;
+    margin: 0px;
     
 }
+
+header{
+    background-color: var(--cor1);
+    height: 100px;
+}
+
+nav{
+    text-align: center;
+    background-color: var(--cor3);
+}
+nav > a{
+    margin: 0px;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    transition-duration: 0.5s;
+    padding: 1px 10px 0px 10px ;
+    border-radius: 5px;
+    
+    
+}
+a:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    font-size: 16.5px;
+    
+}
+
+h1{
+    font-size: 3em;
+    font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+header > h1{
+    text-align: left;
+}
+
+h2{
+    font-size: 1em;
+    background-color: brown;
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Sans Display', Arial, Helvetica, sans-serif;
+    font-weight: bold;    
+}
+
 main{
     
-    background-color: white; 
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px #011F26;
-    width: 900px;
+    background-color: wheat; 
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 15px #00000079;
+    width:auto;
+    max-width: 800px;
     padding: 10px;
     margin: auto;
-}
-hr{
-    margin: 0px;
-}
-h1{
-    margin: 0px;
-}
-h1,h2{
-   
-    text-align: center;
-    font-size: 3em;
-    color: rgb(0, 0, 0);
-    font-family: 'my soul', Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    
-}
-h2{
-    text-align: center;
-    font-size: 2em;
-    color: rgb(0, 0, 0);
-    font-family: 'my soul', Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    text-align: justify;
 }
 
 div{
     text-align: center;
 }
-p{
-    font-size: larger;
-    text-align: justify;
+
+footer{
+    margin-top: 227px;
+    text-align: center;
+    background-color: var(--cor3);
 }
+
+footer > p{
+    margin: 0px;
+}
+
+footer > p > a{
+    margin: 0px;
+    color: wheat;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    padding: 1px 10px 0px 3px ;
+    border-radius: 5px;
+    
+}
+
+
